@@ -1,0 +1,183 @@
+
+.banner {
+    //height: 80px;
+    width: 100%;
+    background-color: #8FC31D;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 20px 50px;
+    box-sizing: border-box;
+
+    .main-search {
+        display: flex;
+        max-width: 600px;
+        flex-grow: 1;
+
+        input {
+            //max-width: 400px;
+            height: 40px;
+            box-sizing: border-box;
+            flex-grow: 1;
+            border: none;
+        }
+
+        button {
+            width: 80px;
+            height: 40px;
+            box-sizing: border-box;
+            border: none;
+            cursor: pointer;
+
+        }
+    }
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px 50px;
+
+    .search-tag {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+
+        .tag-selector {
+            margin: 0 20px;
+            flex-grow: 1;
+            height: 30px;
+        }
+
+        button {
+            width: 80px;
+            height: 30px;
+            box-sizing: border-box;
+            border: none;
+            cursor: pointer;
+
+        }
+    }
+
+    .search-condition-show {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        width: 100%;
+        padding-top: 20px;
+
+        .search-condition-list {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            flex-wrap: wrap;
+
+            .search-condition-item {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 150px;
+                height: 30px;
+                margin: 10px;
+                border-radius: 15px;
+                //background-color: #1a202c;
+                background-color: #8FC31D;
+                color: #ffffff;
+                //text-align: center;
+                //line-height: 30px;
+                button {
+                    width: 25px;
+                    height: 25px;
+                    background-color: transparent;
+                    border-radius: 50%;
+                    border: none;
+                    cursor: pointer;
+                    color: #537509;
+                }
+            }
+        }
+    }
+
+    .product-show {
+        //background-color: #a0aec0;
+        padding-top: 20px;
+        width: 100%;
+
+        .product-list {
+            display: flex;
+            justify-content: flex-start;
+            flex-wrap: wrap;
+
+            .product-item {
+                margin: 10px;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                width: 300px;
+                height: 400px;
+                border: #4a5568 1px solid;
+
+                img {
+                    width: 300px;
+                    height: 200px;
+                    background-color: #cbd5e0;
+                }
+
+                h2 {
+                    font-size: 20px;
+                    text-align: center;
+                    margin: 10px 0;
+                }
+
+                .price {
+                    display: flex;
+                    justify-content: flex-start;
+
+                    h3 {
+                        display: block;
+                        margin: 5px 10px;
+                    }
+
+                    .original-price {
+                        text-decoration: line-through;
+                        color: #a0aec0;
+
+                    }
+
+                    .discount-price {
+                    }
+                }
+
+                .action {
+                    flex-grow: 1;
+                    display: flex;
+                    justify-content: center;
+                    align-items: flex-end;
+
+                    .add-to-cart {
+                        width: 180px;
+                    }
+
+                    .v {
+                        width: 80px;
+                    }
+
+                    button {
+                        background-color: #8FC31D;
+                        border: none;
+                        color: #ffffff;
+                        cursor: pointer;
+                        height: 40px;
+                        margin: 10px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
