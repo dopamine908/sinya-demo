@@ -177,6 +177,16 @@
                 }
             }
         }
+
+        .pagination-link {
+            margin: 20px 0;
+
+            .pagination {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
     }
 }
 

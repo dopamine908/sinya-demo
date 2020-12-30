@@ -17,6 +17,5 @@
             </li>
         @endforeach
     </ul>
-
-    {{$ProductShow->getPaginationLinks($products_paginate)}}
+    <div class="pagination-link">{{$ProductShow->getPaginationLinks($products_paginate)}}</div>
 </div>

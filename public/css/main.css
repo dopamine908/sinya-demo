@@ -134,15 +134,26 @@
   width: 180px;
 }
 .container .product-show .product-list .product-item .action .v {
-  width: 80px;
+    width: 80px;
 }
+
 .container .product-show .product-list .product-item .action button {
-  background-color: #8FC31D;
-  border: none;
-  color: #ffffff;
-  cursor: pointer;
-  height: 40px;
-  margin: 10px;
+    background-color: #8FC31D;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+    height: 40px;
+    margin: 10px;
+}
+
+.container .product-show .pagination-link {
+    margin: 20px 0;
+}
+
+.container .product-show .pagination-link .pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /*# sourceMappingURL=main.css.map */
