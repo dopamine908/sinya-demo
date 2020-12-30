@@ -5,6 +5,10 @@
     @include('main.banner')
 @endsection
 
+{{--@php--}}
+{{--    dump($products_paginate);--}}
+{{--@endphp--}}
+
 {{--container--}}
 @section('search-tag')
     @include('main.container.search-tag')

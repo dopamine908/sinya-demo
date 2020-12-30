@@ -9,4 +9,5 @@
     @yield('product-show')
 </div>
 </body>
+@include('main.script')
 </html>
