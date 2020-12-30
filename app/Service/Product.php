@@ -22,4 +22,9 @@ class Product
     {
         return $this->ProductRepo->getSearchProduct();
     }
+
+    public function getAllBrand()
+    {
+        return $this->ProductRepo->getAllBrand()->toArray();
+    }
 }

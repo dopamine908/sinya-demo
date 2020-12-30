@@ -20,8 +20,10 @@ class IndexController extends Controller
 
     public function index(ProductRequest $request)
     {
+        $all_brand = $this->ProductService->getAllBrand();
         $products_paginate = $this->ProductService->getSearchProduct();
+        dump($all_brand);
         dump($products_paginate);
-        return view('index', compact('products_paginate'));
+        return view('index', compact('products_paginate', 'all_brand'));
     }
 }

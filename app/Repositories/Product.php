@@ -25,4 +25,9 @@ class Product
 
         return $pipeline->paginate($this->per_page);
     }
+
+    public function getAllBrand()
+    {
+        return \App\Models\Product::distinct()->pluck('brand');
+    }
 }
