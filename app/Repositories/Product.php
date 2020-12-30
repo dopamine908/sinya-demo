@@ -5,6 +5,7 @@ namespace App\Repositories;
 
 
 use App\QueryFilter\Product\Brand;
+use App\QueryFilter\Product\DiscountPrice;
 use App\QueryFilter\Product\Title;
 use Illuminate\Pipeline\Pipeline;
 
@@ -19,7 +20,8 @@ class Product
             ->through(
                 [
                     Brand::class,
-                    Title::class
+                    Title::class,
+                    DiscountPrice::class,
                 ]
             )->thenReturn();
 

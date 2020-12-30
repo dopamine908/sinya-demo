@@ -27,6 +27,15 @@ class ProductRequest extends FormRequest
         return [
             'title' => 'string',
             'brand' => Rule::in(['Acer', 'Apple', 'Asus', 'Dell']),
+            'price_interval' => Rule::in(
+                [
+                    'discount_price_level_1',
+                    'discount_price_level_2',
+                    'discount_price_level_3',
+                    'discount_price_level_4'
+                ]
+            ),
+
         ];
     }
 }

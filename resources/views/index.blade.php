@@ -9,6 +9,13 @@
 {{--    dump($products_paginate);--}}
 {{--@endphp--}}
 
+@php
+    dump(request()->input('title'));
+    dump(request()->input('brand'));
+    dump(request()->input('price_interval'));
+@endphp
+
+
 {{--container--}}
 @section('search-tag')
     @include('main.container.search-tag')
